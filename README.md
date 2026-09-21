@@ -13,7 +13,7 @@ escreveu e o que ainda não virou versão?"*. Era essa a pergunta sem dono.
 > Interface em português. Windows, por enquanto — as três IAs guardam os dados em
 > `%USERPROFILE%`, e os caminhos ainda não foram generalizados para Linux/macOS.
 >
-> As capturas usam projetos de demonstração, não dados reais.
+> A captura usa projetos de demonstração, não dados reais.
 
 ---
 
@@ -28,10 +28,8 @@ projeto, pastas que as IAs realmente editam, marcadores deixados no código e o
 estado do versionamento. Mais o **dossiê**: um Markdown com tudo isso, para colar
 numa conversa nova e a próxima IA não começar do zero.
 
-![A Visão geral de um projeto: 67% das metas, o que ainda falta por fase, versionamento e pastas ligadas](docs/projeto.png)
-
-A barra mostra a conta, não um número solto: o trecho sólido são as metas feitas e o
-listrado é a metade que as parciais (`[~]`) valem.
+A barra de progresso mostra a conta, não um número solto: o trecho sólido são as
+metas feitas e o listrado é a metade que as parciais (`[~]`) valem.
 
 **Arquivos** — quais arquivos cada IA editou e quais **ainda não foram commitados**,
 com ordenação por peso, data ou número de escritas, e filtro por tipo. Dá para
