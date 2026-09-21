@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ProjectCommit</title>
+<link rel="icon" href="icone.png" type="image/png">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-name">ProjectCommit</span>
+  </div>
+
+  <div class="search-wrap">
+    <input id="global-search" type="search" placeholder="Buscar em todas as conversas, planos e t&iacute;tulos&hellip;"
+           autocomplete="off" spellcheck="false">
+    <kbd>Ctrl K</kbd>
+  </div>
+
+  <div class="topbar-actions">
+    <button id="btn-scan" class="btn ghost" title="Atualizar &iacute;ndice">
+      <span class="ico-refresh" aria-hidden="true"></span><span class="btn-label">Atualizar</span>
+    </button>
+    <button id="btn-theme" class="btn icon" title="Alternar tema" aria-label="Alternar tema">
+      <span class="ico-theme" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="sidebar">
+    <ul class="nav" id="nav">
+      <li><a href="#/radar"    data-view="radar"><span class="nav-dot"></span>Radar</a></li>
+      <li><a href="#/timeline" data-view="timeline"><span class="nav-dot"></span>Linha do tempo</a></li>
+      <li><a href="#/busca"    data-view="busca"><span class="nav-dot"></span>Busca</a></li>
+      <li><a href="#/consumo"  data-view="consumo"><span class="nav-dot"></span>Consumo</a></li>
+      <li><a href="#/faxina"   data-view="faxina"><span class="nav-dot"></span>Faxina</a></li>
+      <li><a href="#/config"   data-view="config"><span class="nav-dot"></span>Configura&ccedil;&otilde;es</a></li>
+    </ul>
+
+    <div class="sidebar-live" id="sidebar-live" hidden>
+      <div class="sidebar-label">Acontecendo agora</div>
+      <div id="live-list"></div>
+    </div>
+
+    <div class="sidebar-foot">
+      <div class="scan-status" id="scan-status"></div>
+      <button class="btn ghost small" id="btn-ajuda" style="width:100%;justify-content:flex-start;margin-top:6px;
+              padding:0 6px;height:24px;font-size:11.5px;color:var(--faint)">? atalhos</button>
+      <div class="safe-mode" id="safe-mode-chip" title="No Modo Seguro o programa nunca escreve nos seus projetos"></div>
+    </div>
+  </nav>
+
+  <main class="content" id="content">
+    <div class="skeleton-page">
+      <div class="sk-line w40"></div>
+      <div class="sk-grid">
+        <div class="sk-card"></div><div class="sk-card"></div><div class="sk-card"></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Detalhe do projeto"></aside>
+
+<div class="toasts" id="toasts"></div>
+
+<script src="charts.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

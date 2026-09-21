@@ -1,0 +1,15 @@
+# Normaliza a quebra de linha no repositorio (LF), preservando CRLF no disco
+# do Windows. Sem isto o git avisa a cada `add` e o primeiro clone em Linux
+# pega arquivos com CRLF.
+* text=auto
+
+*.py   text eol=lf
+*.js   text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+*.md   text eol=lf
+*.txt  text eol=lf
+*.spec text eol=lf
+
+*.ico  binary
+*.png  binary

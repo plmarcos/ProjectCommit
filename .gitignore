@@ -1,0 +1,48 @@
+# --- build ---
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+*.spec.bak
+*.manifest
+
+# --- ambiente ---
+.venv/
+venv/
+env/
+.python-version
+
+# --- editor / SO ---
+.vscode/
+.idea/
+*.swp
+*~
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- dados locais ---
+# O indice, as configuracoes, os snapshots e os dossies vivem em
+# %LOCALAPPDATA%\ProjectCommit, fora desta pasta. Estas regras sao rede de
+# seguranca para o caso de alguem rodar com outro destino.
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+settings.json
+snapshots/
+exports/
+*.zip
+*.log
+
+# --- notas de desenvolvimento ---
+# Ficam no disco, fora do repositorio: descrevem os projetos reais da
+# maquina onde o programa foi escrito.
+CLAUDE.md
+LEIA-ME.md
+AGENTS.md
+HANDOFF.md
+RETOMAR-AQUI.md
+.claude/

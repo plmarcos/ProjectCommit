@@ -1,0 +1,9 @@
+# Runtime
+flask>=3.0
+pywebview>=6.0
+
+# Empacotamento (opcional -- so' para gerar o .exe)
+pyinstaller>=6.0
+
+# Geracao do icone (opcional -- so' para rodar make_icon.py)
+pillow>=10.0
